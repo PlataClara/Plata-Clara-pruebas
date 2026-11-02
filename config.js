@@ -4,8 +4,8 @@
 window.PC_CONFIG = {
   TEST: true,
   PREFIX: 'pruebas.',
-  SUPABASE_URL: 'https://plataclara.github.io/Plata-Clara-pruebas/',
-  SUPABASE_ANON_KEY: 'sb_secret_IFrauJNeD7a7l2N-db_PLQ_3cZ64Dld',
+  SUPABASE_URL: 'https://zmegkdvvfyldumeevexx.supabase.co/rest/v1/',
+  SUPABASE_ANON_KEY: 'sb_publishable_mnC_IqdTNeYxxhkPExasBQ_AA6uk-VT',
   CONTACT_URL: '',
   INSTAGRAM_URL: '',
   FACEBOOK_URL: '',
