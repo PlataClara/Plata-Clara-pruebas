@@ -4,8 +4,8 @@
 window.PC_CONFIG = {
   TEST: true,
   PREFIX: 'pruebas.',
-  SUPABASE_URL: 'PEGA_AQUI_LA_URL_DEL_PROYECTO_DE_PRUEBAS',
-  SUPABASE_ANON_KEY: 'PEGA_AQUI_LA_CLAVE_PUBLISHABLE_DE_PRUEBAS',
+  SUPABASE_URL: 'https://plataclara.github.io/Plata-Clara-pruebas/',
+  SUPABASE_ANON_KEY: '120711',
   CONTACT_URL: '',
   INSTAGRAM_URL: '',
   FACEBOOK_URL: '',
