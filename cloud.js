@@ -4,6 +4,16 @@
   'use strict';
   var C = window.PC_CONFIG || {};
   if (!C.SUPABASE_URL || !C.SUPABASE_ANON_KEY) return;
+  if (/PEGA_AQUI/.test(C.SUPABASE_URL + C.SUPABASE_ANON_KEY) || !/^https:\/\/[^\s]+\.supabase\.co\/?$/.test(C.SUPABASE_URL)) {
+    document.addEventListener('DOMContentLoaded', function () {
+      var d = document.createElement('div');
+      d.style.cssText = 'position:fixed;inset:0;z-index:99999;background:#fff;color:#111;padding:24px;font:16px sans-serif';
+      d.innerHTML = '<h2>Falta configurar config.js</h2><p>SUPABASE_URL debe ser algo como <b>https://xxxx.supabase.co</b> y SUPABASE_ANON_KEY la clave <b>publishable</b>. Ahora mismo dice: <code></code></p>';
+      d.querySelector('code').textContent = String(C.SUPABASE_URL);
+      document.body.appendChild(d);
+    });
+    return;
+  }
 
   var SYNC_KEY = ((window.PC_CONFIG && window.PC_CONFIG.PREFIX) || '') + 'plataclara.sync', consentOK = false;
   var sb = null, user = null, pushTimer = null, pushing = false, pending = false, status = 'idle', applying = false;
@@ -269,7 +279,8 @@
     if (m.indexOf('rate limit') > -1 || m.indexOf('too many') > -1) return 'Demasiados intentos. Espera unos minutos.';
     if (m.indexOf('email not confirmed') > -1) return 'Confirma tu correo con el enlace que te enviamos y vuelve a ingresar.';
     if (m.indexOf('fetch') > -1 || m.indexOf('network') > -1) return 'Sin conexión. Revisa tu internet.';
-    return 'No se pudo completar. Intenta de nuevo.';
+    console.error('Plata Clara error:', e);
+    return 'No se pudo completar. Intenta de nuevo. (Detalle: ' + (e && e.message ? e.message : String(e)) + ')';
   }
 
   function age(s) {
@@ -535,9 +546,10 @@
     client().then(function () { return sb.auth.getSession(); }).then(function (r) {
       if (r.data.session) { if (!user) { user = r.data.session.user; } checkConsent().then(function (ok) { if (ok) { paint(); reconcile(); } }); }
       else accessSheet();
-    }).catch(function () {
+    }).catch(function (err) {
+      console.error('Plata Clara boot error:', err);
       if (getMark().uid) { unlock(); return; }   // ya ingresó antes en este dispositivo: dejar usar sin internet
-      show('<h2>Sin conexión</h2><p>Necesitas internet para ingresar la primera vez.</p><button class="pc-b" data-r>Reintentar</button>',
+      show('<h2>Sin conexión</h2><p>Necesitas internet para ingresar la primera vez.</p><p style="font-size:12px;opacity:.7">Detalle: ' + esc(err && err.message) + '</p><button class="pc-b" data-r>Reintentar</button>',
         function (o) { o.querySelector('[data-r]').onclick = boot; });
     });
   }
