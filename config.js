@@ -5,7 +5,7 @@ window.PC_CONFIG = {
   TEST: true,
   PREFIX: 'pruebas.',
   SUPABASE_URL: 'https://plataclara.github.io/Plata-Clara-pruebas/',
-  SUPABASE_ANON_KEY: '120711',
+  SUPABASE_ANON_KEY: 'sb_secret_IFrauJNeD7a7l2N-db_PLQ_3cZ64Dld',
   CONTACT_URL: '',
   INSTAGRAM_URL: '',
   FACEBOOK_URL: '',
