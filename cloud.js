@@ -78,6 +78,8 @@
     setStatus('ok');
   }
 
+  window.PCSb = function () { return sb; };      /* usado por hogar.js */
+  window.PCUser = function () { return user; };
   window.PCRpc = function (n, a) { return sb ? sb.rpc(n, a) : Promise.reject(new Error('sin nube')); };
   function loadPlan() {
     if (!sb || !user) return;
