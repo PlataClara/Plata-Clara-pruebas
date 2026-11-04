@@ -259,6 +259,7 @@ label.f>*:not(span){color:var(--ink);font-weight:400}
           <button type="button" class="mi" id="b-account" role="menuitem" hidden><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span id="mi-acc">Mi cuenta</span></button>
           <button type="button" class="mi" data-a="region" role="menuitem"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span id="mi-lang">Idioma</span></button>
           <button type="button" class="mi" id="b-admin" data-a="admin" role="menuitem" hidden><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><span>Dar acceso</span></button>
+          <button type="button" class="mi" data-a="hogar" role="menuitem"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span id="mi-hog">Hogar</span></button>
           <button type="button" class="mi" id="b-soc" data-a="social" role="menuitem" hidden><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span id="mi-soc">Síguenos</span></button>
           <button type="button" class="mi" data-a="settings" role="menuitem"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span id="mi-set">Ajustes</span></button>
         </div>
@@ -325,6 +326,8 @@ Object.keys(N).forEach(function(l){DICT[l]=DICT[l]||{};for(var k in N[l])DICT[l]
 (function(){var N={"en": {"Editar ahorro": "Edit saving", "Nuevo pago de deuda": "New debt payment", "Editar pago de deuda": "Edit debt payment", "Con “+ Nuevo” registras un ingreso o un gasto. Los ahorros y las deudas se anotan en sus propias pestañas.": "With “+ New” you record income or an expense. Savings and debts go in their own tabs."}, "pt": {"Editar ahorro": "Editar poupança", "Nuevo pago de deuda": "Novo pagamento de dívida", "Editar pago de deuda": "Editar pagamento de dívida", "Con “+ Nuevo” registras un ingreso o un gasto. Los ahorros y las deudas se anotan en sus propias pestañas.": "Com “+ Novo” você registra uma renda ou um gasto. Poupanças e dívidas ficam em suas próprias abas."}, "fr": {"Editar ahorro": "Modifier l'épargne", "Nuevo pago de deuda": "Nouveau paiement de dette", "Editar pago de deuda": "Modifier le paiement de dette", "Con “+ Nuevo” registras un ingreso o un gasto. Los ahorros y las deudas se anotan en sus propias pestañas.": "Avec « + Nouveau » vous saisissez un revenu ou une dépense. L'épargne et les dettes ont leurs propres onglets."}, "de": {"Editar ahorro": "Ersparnis bearbeiten", "Nuevo pago de deuda": "Neue Schuldenzahlung", "Editar pago de deuda": "Schuldenzahlung bearbeiten", "Con “+ Nuevo” registras un ingreso o un gasto. Los ahorros y las deudas se anotan en sus propias pestañas.": "Mit „+ Neu“ trägst du Einnahmen oder Ausgaben ein. Ersparnisse und Schulden haben eigene Reiter."}, "it": {"Editar ahorro": "Modifica risparmio", "Nuevo pago de deuda": "Nuovo pagamento del debito", "Editar pago de deuda": "Modifica pagamento del debito", "Con “+ Nuevo” registras un ingreso o un gasto. Los ahorros y las deudas se anotan en sus propias pestañas.": "Con “+ Nuovo” registri un'entrata o una spesa. Risparmi e debiti hanno le loro schede."}};
 Object.keys(N).forEach(function(l){DICT[l]=DICT[l]||{};for(var k in N[l])DICT[l][k]=N[l][k];});})();
 (function(){var N={"en": {"Borrar": "Delete", "¿Borrar esta operación? También se quita su comisión, si tenía.": "Delete this operation? Its fee is also removed, if it had one.", "Operación borrada": "Operation deleted", "Aparta {v} al mes para llegar a tiempo": "Set aside {v} a month to reach it on time", "Plan de pago": "Payment plan", "Paga primero la deuda más chica y, al terminarla, usa esa cuota para la siguiente (método bola de nieve).": "Pay the smallest debt first and, once it is done, use that payment for the next one (snowball method).", "~{n} cuotas": "~{n} installments"}, "pt": {"Borrar": "Apagar", "¿Borrar esta operación? También se quita su comisión, si tenía.": "Apagar esta operação? A taxa dela também é removida, se houver.", "Operación borrada": "Operação apagada", "Aparta {v} al mes para llegar a tiempo": "Reserve {v} por mês para chegar a tempo", "Plan de pago": "Plano de pagamento", "Paga primero la deuda más chica y, al terminarla, usa esa cuota para la siguiente (método bola de nieve).": "Pague primeiro a menor dívida e, ao terminá-la, use essa parcela para a próxima (método bola de neve).", "~{n} cuotas": "~{n} parcelas"}, "fr": {"Borrar": "Supprimer", "¿Borrar esta operación? También se quita su comisión, si tenía.": "Supprimer cette opération ? Ses frais sont aussi retirés, le cas échéant.", "Operación borrada": "Opération supprimée", "Aparta {v} al mes para llegar a tiempo": "Mettez {v} de côté par mois pour y arriver à temps", "Plan de pago": "Plan de paiement", "Paga primero la deuda más chica y, al terminarla, usa esa cuota para la siguiente (método bola de nieve).": "Payez d'abord la plus petite dette puis, une fois soldée, utilisez cette mensualité pour la suivante (méthode boule de neige).", "~{n} cuotas": "~{n} mensualités"}, "de": {"Borrar": "Löschen", "¿Borrar esta operación? También se quita su comisión, si tenía.": "Diesen Vorgang löschen? Eine eventuelle Gebühr wird ebenfalls entfernt.", "Operación borrada": "Vorgang gelöscht", "Aparta {v} al mes para llegar a tiempo": "Lege {v} pro Monat zurück, um rechtzeitig anzukommen", "Plan de pago": "Zahlungsplan", "Paga primero la deuda más chica y, al terminarla, usa esa cuota para la siguiente (método bola de nieve).": "Zahle zuerst die kleinste Schuld und nutze die Rate danach für die nächste (Schneeballmethode).", "~{n} cuotas": "~{n} Raten"}, "it": {"Borrar": "Elimina", "¿Borrar esta operación? También se quita su comisión, si tenía.": "Eliminare questa operazione? Viene rimossa anche la commissione, se c'era.", "Operación borrada": "Operazione eliminata", "Aparta {v} al mes para llegar a tiempo": "Accantona {v} al mese per arrivarci in tempo", "Plan de pago": "Piano di pagamento", "Paga primero la deuda más chica y, al terminarla, usa esa cuota para la siguiente (método bola de nieve).": "Paga prima il debito più piccolo e, una volta estinto, usa quella rata per il successivo (metodo valanga di neve).", "~{n} cuotas": "~{n} rate"}};
+Object.keys(N).forEach(function(l){DICT[l]=DICT[l]||{};for(var k in N[l])DICT[l][k]=N[l][k];});})();
+(function(){var N={"en": {"Hogar": "Household", "Personal": "Personal", "Crear hogar": "Create household", "Nombre del hogar": "Household name", "Ej. Casa": "e.g. Home", "Unirme a un hogar": "Join a household", "Código de invitación": "Invitation code", "Unirme": "Join", "Aún no tienes un hogar. Crea uno para llevar las cuentas con tu pareja o familia, o únete con un código.": "You don't have a household yet. Create one to manage money with your partner or family, or join with a code.", "Miembros": "Members", "Dueño": "Owner", "Tú": "You", "Invitar a alguien": "Invite someone", "Código de invitación (vale 48 horas)": "Invitation code (valid for 48 hours)", "Copiar código": "Copy code", "Compartir por WhatsApp": "Share on WhatsApp", "Código copiado": "Code copied", "El hogar ya tiene 5 personas.": "The household is full (5 people).", "Salir del hogar": "Leave household", "Borrar hogar": "Delete household", "¿Salir de este hogar?": "Leave this household?", "¿Borrar el hogar y todos sus movimientos? Esto no se puede deshacer.": "Delete the household and all its transactions? This cannot be undone.", "¿Quitar a esta persona del hogar?": "Remove this person from the household?", "Hogar creado": "Household created", "Te uniste al hogar": "You joined the household", "Código no válido o vencido.": "Invalid or expired code.", "No se pudo guardar. Intenta de nuevo.": "Could not save. Try again.", "En el Hogar, esta sección llegará pronto.": "In the Household, this section is coming soon.", "Billeteras del hogar": "Household wallets", "Aún no hay billeteras en el hogar. Crea la primera.": "There are no household wallets yet. Create the first one.", "Aún no hay movimientos en el hogar.": "There are no household transactions yet.", "Primero crea una billetera del hogar.": "First create a household wallet.", "¿Borrar este movimiento?": "Delete this transaction?", "¿Borrar esta billetera y sus movimientos?": "Delete this wallet and its transactions?", "por {name}": "by {name}", "Lo que salió este mes": "What went out this month", "Te invito a mi hogar en Plata Clara. Tu código (vale 48 horas): {code}. Entra a {url}, toca “No tengo cuenta”, luego “Ya me dieron acceso” y escribe el código al registrarte.": "I invite you to my household on Plata Clara. Your code (valid 48 hours): {code}. Go to {url}, tap “I don't have an account”, then “I have access” and enter the code when you sign up."}, "pt": {"Hogar": "Casa", "Personal": "Pessoal", "Crear hogar": "Criar casa", "Nombre del hogar": "Nome da casa", "Ej. Casa": "Ex. Casa", "Unirme a un hogar": "Entrar numa casa", "Código de invitación": "Código de convite", "Unirme": "Entrar", "Aún no tienes un hogar. Crea uno para llevar las cuentas con tu pareja o familia, o únete con un código.": "Você ainda não tem uma casa. Crie uma para organizar o dinheiro com seu parceiro ou família, ou entre com um código.", "Miembros": "Membros", "Dueño": "Dono", "Tú": "Você", "Invitar a alguien": "Convidar alguém", "Código de invitación (vale 48 horas)": "Código de convite (vale 48 horas)", "Copiar código": "Copiar código", "Compartir por WhatsApp": "Compartilhar no WhatsApp", "Código copiado": "Código copiado", "El hogar ya tiene 5 personas.": "A casa já tem 5 pessoas.", "Salir del hogar": "Sair da casa", "Borrar hogar": "Apagar casa", "¿Salir de este hogar?": "Sair desta casa?", "¿Borrar el hogar y todos sus movimientos? Esto no se puede deshacer.": "Apagar a casa e todas as movimentações? Isso não pode ser desfeito.", "¿Quitar a esta persona del hogar?": "Remover esta pessoa da casa?", "Hogar creado": "Casa criada", "Te uniste al hogar": "Você entrou na casa", "Código no válido o vencido.": "Código inválido ou vencido.", "No se pudo guardar. Intenta de nuevo.": "Não foi possível salvar. Tente novamente.", "En el Hogar, esta sección llegará pronto.": "Na Casa, esta seção chegará em breve.", "Billeteras del hogar": "Carteiras da casa", "Aún no hay billeteras en el hogar. Crea la primera.": "Ainda não há carteiras na casa. Crie a primeira.", "Aún no hay movimientos en el hogar.": "Ainda não há movimentações na casa.", "Primero crea una billetera del hogar.": "Primeiro crie uma carteira da casa.", "¿Borrar este movimiento?": "Apagar esta movimentação?", "¿Borrar esta billetera y sus movimientos?": "Apagar esta carteira e suas movimentações?", "por {name}": "por {name}", "Lo que salió este mes": "O que saiu neste mês", "Te invito a mi hogar en Plata Clara. Tu código (vale 48 horas): {code}. Entra a {url}, toca “No tengo cuenta”, luego “Ya me dieron acceso” y escribe el código al registrarte.": "Convido você para minha casa no Plata Clara. Seu código (vale 48 horas): {code}. Acesse {url}, toque em “Não tenho conta”, depois “Já tenho acesso” e digite o código ao se cadastrar."}, "fr": {"Hogar": "Foyer", "Personal": "Personnel", "Crear hogar": "Créer un foyer", "Nombre del hogar": "Nom du foyer", "Ej. Casa": "Ex. Maison", "Unirme a un hogar": "Rejoindre un foyer", "Código de invitación": "Code d'invitation", "Unirme": "Rejoindre", "Aún no tienes un hogar. Crea uno para llevar las cuentas con tu pareja o familia, o únete con un código.": "Vous n'avez pas encore de foyer. Créez-en un pour gérer l'argent avec votre conjoint ou votre famille, ou rejoignez-en un avec un code.", "Miembros": "Membres", "Dueño": "Propriétaire", "Tú": "Vous", "Invitar a alguien": "Inviter quelqu'un", "Código de invitación (vale 48 horas)": "Code d'invitation (valable 48 heures)", "Copiar código": "Copier le code", "Compartir por WhatsApp": "Partager sur WhatsApp", "Código copiado": "Code copié", "El hogar ya tiene 5 personas.": "Le foyer a déjà 5 personnes.", "Salir del hogar": "Quitter le foyer", "Borrar hogar": "Supprimer le foyer", "¿Salir de este hogar?": "Quitter ce foyer ?", "¿Borrar el hogar y todos sus movimientos? Esto no se puede deshacer.": "Supprimer le foyer et tous ses mouvements ? Action irréversible.", "¿Quitar a esta persona del hogar?": "Retirer cette personne du foyer ?", "Hogar creado": "Foyer créé", "Te uniste al hogar": "Vous avez rejoint le foyer", "Código no válido o vencido.": "Code invalide ou expiré.", "No se pudo guardar. Intenta de nuevo.": "Enregistrement impossible. Réessayez.", "En el Hogar, esta sección llegará pronto.": "Dans le Foyer, cette section arrive bientôt.", "Billeteras del hogar": "Portefeuilles du foyer", "Aún no hay billeteras en el hogar. Crea la primera.": "Aucun portefeuille dans le foyer. Créez le premier.", "Aún no hay movimientos en el hogar.": "Aucun mouvement dans le foyer.", "Primero crea una billetera del hogar.": "Créez d'abord un portefeuille du foyer.", "¿Borrar este movimiento?": "Supprimer ce mouvement ?", "¿Borrar esta billetera y sus movimientos?": "Supprimer ce portefeuille et ses mouvements ?", "por {name}": "par {name}", "Lo que salió este mes": "Ce qui est sorti ce mois-ci", "Te invito a mi hogar en Plata Clara. Tu código (vale 48 horas): {code}. Entra a {url}, toca “No tengo cuenta”, luego “Ya me dieron acceso” y escribe el código al registrarte.": "Je vous invite dans mon foyer sur Plata Clara. Votre code (valable 48 heures) : {code}. Allez sur {url}, touchez « Je n'ai pas de compte », puis « J'ai l'accès » et saisissez le code à l'inscription."}, "de": {"Hogar": "Haushalt", "Personal": "Persönlich", "Crear hogar": "Haushalt erstellen", "Nombre del hogar": "Name des Haushalts", "Ej. Casa": "z. B. Zuhause", "Unirme a un hogar": "Einem Haushalt beitreten", "Código de invitación": "Einladungscode", "Unirme": "Beitreten", "Aún no tienes un hogar. Crea uno para llevar las cuentas con tu pareja o familia, o únete con un código.": "Du hast noch keinen Haushalt. Erstelle einen, um das Geld mit Partner oder Familie zu verwalten, oder tritt mit einem Code bei.", "Miembros": "Mitglieder", "Dueño": "Inhaber", "Tú": "Du", "Invitar a alguien": "Jemanden einladen", "Código de invitación (vale 48 horas)": "Einladungscode (48 Stunden gültig)", "Copiar código": "Code kopieren", "Compartir por WhatsApp": "Über WhatsApp teilen", "Código copiado": "Code kopiert", "El hogar ya tiene 5 personas.": "Der Haushalt hat bereits 5 Personen.", "Salir del hogar": "Haushalt verlassen", "Borrar hogar": "Haushalt löschen", "¿Salir de este hogar?": "Diesen Haushalt verlassen?", "¿Borrar el hogar y todos sus movimientos? Esto no se puede deshacer.": "Haushalt und alle Buchungen löschen? Das kann nicht rückgängig gemacht werden.", "¿Quitar a esta persona del hogar?": "Diese Person aus dem Haushalt entfernen?", "Hogar creado": "Haushalt erstellt", "Te uniste al hogar": "Du bist dem Haushalt beigetreten", "Código no válido o vencido.": "Ungültiger oder abgelaufener Code.", "No se pudo guardar. Intenta de nuevo.": "Speichern fehlgeschlagen. Versuche es erneut.", "En el Hogar, esta sección llegará pronto.": "Im Haushalt kommt dieser Bereich bald.", "Billeteras del hogar": "Haushalts-Geldbörsen", "Aún no hay billeteras en el hogar. Crea la primera.": "Noch keine Haushalts-Geldbörsen. Lege die erste an.", "Aún no hay movimientos en el hogar.": "Noch keine Haushaltsbuchungen.", "Primero crea una billetera del hogar.": "Lege zuerst eine Haushalts-Geldbörse an.", "¿Borrar este movimiento?": "Diese Buchung löschen?", "¿Borrar esta billetera y sus movimientos?": "Diese Geldbörse und ihre Buchungen löschen?", "por {name}": "von {name}", "Lo que salió este mes": "Was diesen Monat ausging", "Te invito a mi hogar en Plata Clara. Tu código (vale 48 horas): {code}. Entra a {url}, toca “No tengo cuenta”, luego “Ya me dieron acceso” y escribe el código al registrarte.": "Ich lade dich in meinen Haushalt bei Plata Clara ein. Dein Code (48 Stunden gültig): {code}. Öffne {url}, tippe auf „Ich habe kein Konto“, dann „Ich habe Zugang“ und gib den Code bei der Registrierung ein."}, "it": {"Hogar": "Famiglia", "Personal": "Personale", "Crear hogar": "Crea famiglia", "Nombre del hogar": "Nome della famiglia", "Ej. Casa": "Es. Casa", "Unirme a un hogar": "Unisciti a una famiglia", "Código de invitación": "Codice di invito", "Unirme": "Unisciti", "Aún no tienes un hogar. Crea uno para llevar las cuentas con tu pareja o familia, o únete con un código.": "Non hai ancora una famiglia. Creane una per gestire i soldi con il partner o la famiglia, oppure unisciti con un codice.", "Miembros": "Membri", "Dueño": "Proprietario", "Tú": "Tu", "Invitar a alguien": "Invita qualcuno", "Código de invitación (vale 48 horas)": "Codice di invito (valido 48 ore)", "Copiar código": "Copia codice", "Compartir por WhatsApp": "Condividi su WhatsApp", "Código copiado": "Codice copiato", "El hogar ya tiene 5 personas.": "La famiglia ha già 5 persone.", "Salir del hogar": "Esci dalla famiglia", "Borrar hogar": "Elimina famiglia", "¿Salir de este hogar?": "Uscire da questa famiglia?", "¿Borrar el hogar y todos sus movimientos? Esto no se puede deshacer.": "Eliminare la famiglia e tutti i movimenti? Non si può annullare.", "¿Quitar a esta persona del hogar?": "Rimuovere questa persona dalla famiglia?", "Hogar creado": "Famiglia creata", "Te uniste al hogar": "Ti sei unito alla famiglia", "Código no válido o vencido.": "Codice non valido o scaduto.", "No se pudo guardar. Intenta de nuevo.": "Salvataggio non riuscito. Riprova.", "En el Hogar, esta sección llegará pronto.": "Nella Famiglia, questa sezione arriverà presto.", "Billeteras del hogar": "Portafogli della famiglia", "Aún no hay billeteras en el hogar. Crea la primera.": "Ancora nessun portafoglio nella famiglia. Crea il primo.", "Aún no hay movimientos en el hogar.": "Ancora nessun movimento nella famiglia.", "Primero crea una billetera del hogar.": "Prima crea un portafoglio della famiglia.", "¿Borrar este movimiento?": "Eliminare questo movimento?", "¿Borrar esta billetera y sus movimientos?": "Eliminare questo portafoglio e i suoi movimenti?", "por {name}": "di {name}", "Lo que salió este mes": "Quello che è uscito questo mese", "Te invito a mi hogar en Plata Clara. Tu código (vale 48 horas): {code}. Entra a {url}, toca “No tengo cuenta”, luego “Ya me dieron acceso” y escribe el código al registrarte.": "Ti invito nella mia famiglia su Plata Clara. Il tuo codice (valido 48 ore): {code}. Vai su {url}, tocca “Non ho un account”, poi “Ho l'accesso” e inserisci il codice alla registrazione."}};
 Object.keys(N).forEach(function(l){DICT[l]=DICT[l]||{};for(var k in N[l])DICT[l][k]=N[l][k];});})();
 function K(s){return s;}                    /* marca textos estáticos que se traducen al mostrarlos */
 var LANG='es';
@@ -425,7 +428,7 @@ function migrate(d){
 }
 function curBar(){
   var set={};set[S.cc]=1;
-  [S.moves,S.goals,S.debts,S.quicks,S.wallets].forEach(function(l){(l||[]).forEach(function(x){set[mc(x)]=1;});});
+  [S.moves,S.goals,S.debts,S.quicks,S.wallets,H.wallets].forEach(function(l){(l||[]).forEach(function(x){set[mc(x)]=1;});});
   var list=Object.keys(set);if(list.length<2)return '';
   return '<div class="chips" role="group" aria-label="'+esc(t('Moneda'))+'">'+list.map(function(c){return '<button class="chip" data-a="cur" data-v="'+c+'" aria-pressed="'+(c===S.cc)+'">'+c+' ('+esc(curSym(c))+')</button>';}).join('')+'</div>';
 }
@@ -469,10 +472,9 @@ var NAV=[
  ['presupuesto',K('Presupuesto'),'<circle cx="12" cy="12" r="9"/><path d="M12 3v9h9"/>'],
  ['ahorros',K('Ahorros'),'<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/>'],
  ['deudas',K('Deudas'),'<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/>'],
- ['billeteras',K('Billeteras'),'<path d="M3 7a2 2 0 0 1 2-2h13v4"/><path d="M3 7v11a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-2z"/><circle cx="16.5" cy="14.5" r="1"/>'],
- ['hogar',K('Hogar'),'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.4c2.2.8 3.5 2.7 3.5 5.6"/>']
+ ['billeteras',K('Billeteras'),'<path d="M3 7a2 2 0 0 1 2-2h13v4"/><path d="M3 7v11a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-2z"/><circle cx="16.5" cy="14.5" r="1"/>']
 ];
-var TITLES={resumen:K('Resumen'),movimientos:K('Movimientos'),presupuesto:K('Presupuesto mensual'),ahorros:K('Ahorros'),metas:K('Metas'),deudas:K('Deudas'),billeteras:K('Billeteras'),hogar:K('Hogar')};
+var TITLES={resumen:K('Resumen'),movimientos:K('Movimientos'),presupuesto:K('Presupuesto mensual'),ahorros:K('Ahorros'),metas:K('Metas'),deudas:K('Deudas'),billeteras:K('Billeteras')};
 var FILTERS=[['Todos',K('Todos')],['Ingreso',K('Ingresos')],['Gasto',K('Gastos')],['Ahorro',K('Ahorros')],['Deuda',K('Deudas')]];
 var TOUR=[
  {v:'resumen',t:K('Bienvenido a Plata Clara'),p:K('Aquí anotas lo que ganas y lo que gastas, y la app te muestra cuánto te queda. Este recorrido dura un minuto. Los datos que ves ahora son de ejemplo, para que pruebes sin miedo.')},
@@ -1221,6 +1223,12 @@ function sheetHTML(){
       +'<label class="f full" style="flex-direction:row;align-items:center;gap:8px"><input type="checkbox" name="main" style="width:auto"'+(w0.main?' checked':'')+'><span>'+t('Usar como billetera principal')+'</span></label>'
       +'<label class="f full" style="flex-direction:row;align-items:center;gap:8px"><input type="checkbox" name="cash" style="width:auto"'+(w0.cash?' checked':'')+'><span>'+t('Es mi billetera de efectivo')+'</span></label></div>'
       +'<div class="foot"><button class="btn grow" type="submit">'+t('Guardar')+'</button><button class="btn alt" type="button" data-a="close">'+t('Cancelar')+'</button>'+(s.id?'<button class="btn danger" type="button" data-a="del">'+t('Eliminar')+'</button>':'')+'</div></form>';
+  }else if(s.kind==='hogar'){
+    h=hogarHTML();
+  }else if(s.kind==='hmove'){
+    h=hmoveHTML(s);
+  }else if(s.kind==='hwallet'){
+    h=hwalletHTML(s);
   }else if(s.kind==='cash'){
     var dig=wallets(S.cc).filter(function(w){return !w.cash;});
     h='<h2>'+t('Retirar o depositar efectivo')+'</h2><form data-kind="cash"><div class="fgrid">'
@@ -1257,10 +1265,11 @@ function render(){
   var bt=document.getElementById('bottom');bt.innerHTML=nav;bt.setAttribute('aria-label',t('Secciones'));
   document.getElementById('title').textContent=t(TITLES[ui.view]);
   document.getElementById('b-menu').setAttribute('aria-label',t('Ajustes'));
-  document.getElementById('mi-acc').textContent=t('Mi cuenta');document.getElementById('mi-lang').textContent=t('Idioma');document.getElementById('mi-set').textContent=t('Ajustes');document.getElementById('mi-soc').textContent=t('Síguenos');document.getElementById('b-soc').hidden=!(socials().length||((window.PC_CONFIG||{}).CONTACT_URL));
+  document.getElementById('mi-acc').textContent=t('Mi cuenta');document.getElementById('mi-lang').textContent=t('Idioma');document.getElementById('mi-set').textContent=t('Ajustes');document.getElementById('mi-soc').textContent=t('Síguenos');document.getElementById('mi-hog').textContent=t('Hogar');document.getElementById('b-soc').hidden=!(socials().length||((window.PC_CONFIG||{}).CONTACT_URL));
   document.getElementById('banner').innerHTML=S.demo?'<div class="banner"><span>'+t('<b>Estás viendo datos de ejemplo.</b> Pruébalos y, cuando quieras, empieza con los tuyos.')+'</span><button class="btn sm" data-a="clearall">'+t('Empezar con mis datos')+'</button></div>':'';
   if(ui.view==='metas')ui.view='ahorros';
-  var v=(ui.view==='hogar'?'':curBar())+walBar()+{resumen:vResumen,movimientos:vMovs,presupuesto:vPresu,ahorros:vAhorros,metas:vMetas,deudas:vDeudas,billeteras:vBilleteras,hogar:function(){return window.PCHogar?window.PCHogar.html():'';}}[ui.view]();
+  var hog=(ui.space==='hogar'&&H.hh);
+  var v=spaceBar()+curBar()+(hog?'':walBar())+(hog?vHogar():{resumen:vResumen,movimientos:vMovs,presupuesto:vPresu,ahorros:vAhorros,metas:vMetas,deudas:vDeudas,billeteras:vBilleteras}[ui.view]());
   if(ui.view==='movimientos'||ui.view==='resumen')v+='<button class="btn fab" data-a="new">'+t('+ Nuevo')+'</button>';
   document.getElementById('view').innerHTML=v;
   var sh=document.getElementById('sheet');
@@ -1323,6 +1332,128 @@ window.addEventListener('resize',function(){if(coachOn)coachShow();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&coachOn)coachEnd();});
 setTimeout(maybeTour,500);
 function atEnd(){}
+/* ===== Hogar compartido (etapa 1): billeteras y movimientos compartidos ===== */
+var H={hh:null,members:[],wallets:[],moves:[],me:null,loaded:false,busy:false};
+function sbc(){return window.PCSb?window.PCSb():null;}
+function hid(){try{return crypto.randomUUID();}catch(e){return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var r=Math.random()*16|0;return (c==='x'?r:(r&3|8)).toString(16);});}}
+function hReset(){H.hh=null;H.members=[];H.wallets=[];H.moves=[];H.me=null;H.loaded=false;H.busy=false;ui.space='personal';}
+function hRender(){
+  if(coachOn)return;
+  if(ui.sheet&&ui.sheet.kind!=='hogar')return;
+  var ae=document.activeElement;if(ui.sheet&&ae&&/INPUT|SELECT|TEXTAREA/.test(ae.tagName))return;
+  render();
+}
+function hChk(r){if(r&&r.error){toast(t('No se pudo guardar. Intenta de nuevo.'));H.busy=false;hRefresh();}}
+function hRefresh(cb){
+  var sb=sbc();if(!sb||H.busy)return;H.busy=true;
+  sb.rpc('my_household').then(function(r){
+    if(r.error||!r.data){var had=!!H.hh;H.hh=null;H.members=[];H.wallets=[];H.moves=[];H.loaded=true;H.busy=false;if(ui.space==='hogar')ui.space='personal';if(had||ui.sheet)hRender();return;}
+    H.hh=r.data.household;H.members=r.data.members||[];H.me=r.data.me;
+    return Promise.all([sb.from('household_wallets').select('*').order('created_at',{ascending:true}),sb.from('household_moves').select('*').order('date',{ascending:false}).limit(2000)]).then(function(x){
+      H.wallets=(x[0].data||[]).map(function(w){return {id:w.id,name:w.name,cc:w.cc,initial:+w.initial||0,main:!!w.main,cash:!!w.cash};});
+      H.moves=(x[1].data||[]).map(function(m){m.amount=+m.amount;return m;});
+      H.loaded=true;H.busy=false;hRender();if(cb)cb();
+    });
+  }).catch(function(){H.busy=false;});
+}
+setInterval(function(){if(H.hh&&ui.space==='hogar'&&!document.hidden)hRefresh();},20000);
+document.addEventListener('visibilitychange',function(){if(!document.hidden&&H.hh)hRefresh();});
+function hWallets(cc){return H.wallets.filter(function(w){return w.cc===cc;});}
+function hWalletOf(id){return H.wallets.filter(function(w){return w.id===id;})[0];}
+function hBal(w){var b=w.initial||0;H.moves.forEach(function(m){if(m.wallet_id===w.id)b+=m.type==='Ingreso'?m.amount:-m.amount;});return b;}
+function hWho(u){var m=H.members.filter(function(x){return x.user_id===u;})[0];return m?m.display:'';}
+function hSum(k,type){return H.moves.reduce(function(a,m){return a+(m.type===type&&m.cc===S.cc&&String(m.date).slice(0,7)===k?m.amount:0);},0);}
+function fmtCode(c){return String(c||'').replace(/(.{4})/g,'$1-').replace(/-$/,'');}
+function spaceBar(){
+  if(!H.hh)return '';
+  return '<div class="chips" role="group" aria-label="'+esc(t('Hogar'))+'"><button class="chip" data-a="space" data-v="personal" aria-pressed="'+(ui.space!=='hogar')+'">'+t('Personal')+'</button><button class="chip" data-a="space" data-v="hogar" aria-pressed="'+(ui.space==='hogar')+'">'+esc(H.hh.name)+'</button></div>';
+}
+function hRow(m){
+  var w=hWalletOf(m.wallet_id),sign=m.type==='Ingreso'?'+':'−';
+  return '<button class="row" data-a="hedit" data-id="'+esc(m.id)+'"><span class="t"><b>'+esc(m.descr||t(TYPE_LABEL[m.type]))+'</b><small>'+esc(cname(m.cat))+(w?' · '+esc(w.name):'')+' · '+t('por {name}',{name:esc(hWho(m.user_id)||'?')})+'</small></span><span class="a num '+TYPE_CLASS[m.type]+'">'+sign+money(m.amount,m.cc)+'</span></button>';
+}
+function hList(list){
+  var h='',day='',open=false;
+  list.forEach(function(m){if(m.date!==day){if(open)h+='</div>';day=m.date;h+='<div class="day">'+dayLabel(day)+'</div><div class="list">';open=true;}h+=hRow(m);});
+  return h+(open?'</div>':'');
+}
+function hWalletRows(ws){
+  return '<div class="card" style="padding:0;margin-top:12px;overflow:hidden">'+ws.map(function(w){var b=hBal(w);return '<button style="'+WROW+'cursor:pointer" data-a="hw-edit" data-id="'+esc(w.id)+'"><span><b>'+esc(w.name)+'</b></span><span class="num '+(b<0?'c-exp':'')+'">'+money(b,w.cc)+'</span></button>';}).join('')+'</div>';
+}
+function hResumen(){
+  var k=ui.month,ws=hWallets(S.cc),tot=ws.reduce(function(a,w){return a+hBal(w);},0);
+  var h=monthBar()+'<div class="grid stats">'+statTile(t('Billeteras del hogar'),money(tot),esc(H.hh.name),tot<0?'c-exp':'',true)
+    +statTile(t('Ingresos'),money(hSum(k,'Ingreso')),t('Lo que entró este mes'),'c-inc')
+    +statTile(t('Gastos'),money(hSum(k,'Gasto')),t('Lo que salió este mes'),'c-exp')+'</div>';
+  if(!ws.length)return h+'<div class="card" style="margin-top:12px"><p class="empty">'+t('Aún no hay billeteras en el hogar. Crea la primera.')+'</p><button class="btn sm" data-a="hw-new">+ '+t('Nueva billetera')+'</button></div>';
+  h+=hWalletRows(ws);
+  var rec=H.moves.filter(function(m){return m.cc===S.cc;}).slice(0,8);
+  if(rec.length)h+='<div class="day" style="margin-top:16px">'+t('Movimientos')+'</div><div class="list">'+rec.map(hRow).join('')+'</div>';
+  return h;
+}
+function hMovs(){
+  var fl=['Todos','Ingreso','Gasto'].indexOf(ui.filter)<0?'Todos':ui.filter;
+  var h=monthBar()+'<div class="chips" role="group">'+FILTERS.slice(0,3).map(function(f){return '<button class="chip" data-a="filter" data-v="'+f[0]+'" aria-pressed="'+(fl===f[0])+'">'+t(f[1])+'</button>';}).join('')+'</div>';
+  var list=H.moves.filter(function(m){return m.cc===S.cc&&String(m.date).slice(0,7)===ui.month&&(fl==='Todos'||m.type===fl);}).sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
+  if(!list.length)return h+'<div class="card"><p class="empty">'+t('Aún no hay movimientos en el hogar.')+'</p></div>';
+  return h+hList(list);
+}
+function hBilleteras(){
+  var ws=hWallets(S.cc),tot=ws.reduce(function(a,w){return a+hBal(w);},0);
+  var h='<div class="actions" style="margin:6px 0 12px"><button class="btn sm" data-a="hw-new">+ '+t('Nueva billetera')+'</button></div>';
+  if(!ws.length)return h+'<div class="card"><p class="empty">'+t('Aún no hay billeteras en el hogar. Crea la primera.')+'</p></div>';
+  return h+'<div class="grid stats">'+statTile(t('Billeteras del hogar'),money(tot),esc(H.hh.name),tot<0?'c-exp':'',true)+'</div>'+hWalletRows(ws);
+}
+function vHogar(){
+  if(ui.view==='resumen')return hResumen();
+  if(ui.view==='movimientos')return hMovs();
+  if(ui.view==='billeteras')return hBilleteras();
+  return '<div class="card"><p class="empty">'+t('En el Hogar, esta sección llegará pronto.')+'</p></div>';
+}
+function hWOpts(sel){return H.wallets.map(function(w){return '<option value="'+esc(w.id)+'" data-cc="'+w.cc+'"'+(w.id===sel?' selected':'')+'>'+esc(w.name)+' ('+w.cc+')</option>';}).join('');}
+function hmoveHTML(s){
+  var m=s.id?H.moves.filter(function(x){return x.id===s.id;})[0]:null;
+  if(!H.wallets.length)return '<h2>'+t('Nuevo movimiento')+'</h2><p class="note">'+t('Primero crea una billetera del hogar.')+'</p><div class="foot"><button class="btn grow" data-a="hw-new">+ '+t('Nueva billetera')+'</button><button class="btn alt" data-a="close">'+t('Cancelar')+'</button></div>';
+  var ty=m?m.type:'Gasto',def=m?m.wallet_id:((hWallets(S.cc)[0]||H.wallets[0]).id),wc=(hWalletOf(def)||{}).cc||S.cc;
+  return '<h2>'+t(m?K('Editar movimiento'):K('Nuevo movimiento'))+'</h2><form data-kind="hmove"><div class="seg" style="grid-template-columns:repeat(2,1fr)" role="radiogroup">'
+    +['Ingreso','Gasto'].map(function(tp){return '<div><input type="radio" name="htype" id="ht-'+tp+'" value="'+tp+'"'+(ty===tp?' checked':'')+'><label for="ht-'+tp+'">'+t(tp)+'</label></div>';}).join('')+'</div>'
+    +'<div class="fgrid" style="margin-top:14px">'
+    +'<label class="f"><span data-amtl>'+t('Monto ({c})',{c:esc(curSym(wc))})+'</span><input name="amount" inputmode="decimal" required placeholder="0.00" value="'+(m?m.amount:'')+'"></label>'
+    +'<label class="f"><span>'+t('Fecha')+'</span><input type="date" name="date" required value="'+(m?String(m.date).slice(0,10):iso(new Date()))+'"></label>'
+    +'<label class="f full"><span>'+t('Billetera')+'</span><select name="wallet" required>'+hWOpts(def)+'</select></label>'
+    +'<label class="f full"><span>'+t('Categoría')+'</span><select name="cat">'+opts(CATS.slice(0,BASE_N),m?m.cat:'Alimentación')+'</select></label>'
+    +'<label class="f full"><span>'+t('Descripción')+'</span><input name="desc" maxlength="80" placeholder="'+esc(t('Ej. Desayuno, pago semanal'))+'" value="'+esc(m?m.descr:'')+'"></label></div>'
+    +'<div class="foot"><button class="btn grow" type="submit">'+t('Guardar')+'</button><button class="btn alt" type="button" data-a="close">'+t('Cancelar')+'</button>'+(m?'<button class="btn danger" type="button" data-a="h-mdel">'+t('Eliminar')+'</button>':'')+'</div></form>';
+}
+function hwalletHTML(s){
+  var w=s.id?hWalletOf(s.id):{cc:S.cc};
+  return '<h2>'+t(s.id?K('Editar billetera'):K('Nueva billetera'))+'</h2><form data-kind="hwallet"><div class="fgrid">'
+    +'<label class="f full"><span>'+t('Nombre de la billetera')+'</span><input name="name" required maxlength="30" autocomplete="off" value="'+esc(w.name||'')+'"></label>'
+    +'<label class="f full"><span>'+t('Moneda')+'</span><select name="cc"'+(s.id?' disabled':'')+'>'+curOptions(w.cc||S.cc)+'</select></label>'
+    +'<label class="f full"><span>'+t('Saldo inicial')+'</span><input name="initial" inputmode="decimal" placeholder="0.00" value="'+(w.initial||'')+'"></label></div>'
+    +'<div class="foot"><button class="btn grow" type="submit">'+t('Guardar')+'</button><button class="btn alt" type="button" data-a="close">'+t('Cancelar')+'</button>'+(s.id?'<button class="btn danger" type="button" data-a="h-wdel">'+t('Eliminar')+'</button>':'')+'</div></form>';
+}
+function hogarHTML(){
+  var o='<h2>'+t('Hogar')+'</h2>',bar='<div class="foot"><button class="btn alt" data-a="close">'+t('Cerrar')+'</button></div>',H3='<h3 style="font-size:16px;margin:18px 0 6px">';
+  if(!H.loaded&&!H.hh)return o+'<p class="note">'+t('Cargando…')+'</p>'+bar;
+  if(!H.hh)return o+'<p class="note">'+t('Aún no tienes un hogar. Crea uno para llevar las cuentas con tu pareja o familia, o únete con un código.')+'</p>'
+    +'<label class="f full"><span>'+t('Nombre del hogar')+'</span><input id="h-name" maxlength="40" placeholder="'+esc(t('Ej. Casa'))+'"></label><button class="btn" style="margin-top:8px" data-a="h-create">'+t('Crear hogar')+'</button>'
+    +H3+t('Unirme a un hogar')+'</h3><label class="f full"><span>'+t('Código de invitación')+'</span><input id="h-code" maxlength="20" autocomplete="off" placeholder="XXXX-XXXX-XXXX"></label><button class="btn alt" style="margin-top:8px" data-a="h-join">'+t('Unirme')+'</button>'+bar;
+  var owner=H.hh.owner_id===H.me,row='display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px';
+  o+='<p><b>'+esc(H.hh.name)+'</b></p>'+H3+t('Miembros')+' ('+H.members.length+'/5)</h3>'
+    +H.members.map(function(m){return '<div style="'+row+'"><span>'+esc(m.display||'?')+(m.user_id===H.me?' <small style="color:var(--muted)">('+t('Tú')+')</small>':'')+(m.role==='owner'?' <small style="color:var(--muted)">· '+t('Dueño')+'</small>':'')+'</span>'+(owner&&m.role!=='owner'?'<button class="btn sm alt" data-a="h-kick" data-id="'+esc(m.user_id)+'">'+t('Quitar')+'</button>':'')+'</div>';}).join('');
+  if(owner){
+    o+=H3+t('Invitar a alguien')+'</h3>';
+    if(ui.inviteCode){
+      var url=location.origin+location.pathname,msg=t('Te invito a mi hogar en Plata Clara. Tu código (vale 48 horas): {code}. Entra a {url}, toca “No tengo cuenta”, luego “Ya me dieron acceso” y escribe el código al registrarte.',{code:fmtCode(ui.inviteCode),url:url});
+      o+='<p class="note">'+t('Código de invitación (vale 48 horas)')+'</p><div style="font:700 22px/1.2 ui-monospace,monospace;letter-spacing:.08em;margin:6px 0 10px">'+esc(fmtCode(ui.inviteCode))+'</div>'
+        +'<div class="actions"><button class="btn alt sm" data-a="h-copy">'+t('Copiar código')+'</button><a class="btn sm" style="text-decoration:none" target="_blank" rel="noopener noreferrer" href="https://wa.me/?text='+encodeURIComponent(msg.replace(/&amp;/g,'&'))+'">'+t('Compartir por WhatsApp')+'</a></div>';
+    }
+    o+='<button class="btn alt" style="margin-top:10px" data-a="h-invite">'+t('Invitar a alguien')+'</button>';
+  }
+  o+='<div style="margin-top:18px">'+(owner?'<button class="btn danger" data-a="h-delete">'+t('Borrar hogar')+'</button>':'<button class="btn danger" data-a="h-leave">'+t('Salir del hogar')+'</button>')+'</div>';
+  return o+bar;
+}
 /* ================= eventos ================= */
 document.addEventListener('click',function(e){
   var el=e.target.closest('[data-a]');if(!el)return;
@@ -1333,7 +1464,7 @@ document.addEventListener('click',function(e){
   else if(a==='mprev'){ui.month=shiftMonth(ui.month,-1);render();}
   else if(a==='mnext'){ui.month=shiftMonth(ui.month,1);render();}
   else if(a==='filter'){ui.filter=el.dataset.v;render();}
-  else if(a==='new'){ui.sheet={kind:'move'};render();}
+  else if(a==='new'){ui.sheet=(ui.space==='hogar'&&H.hh)?{kind:'hmove'}:{kind:'move'};render();}
   else if(a==='edit'){ui.sheet={kind:'move',id:id};render();}
   else if(a==='goal-new'){ui.sheet={kind:'goal'};render();}
   else if(a==='admin'){ui.sheet={kind:'admin',noFocus:true};render();admLoad();}
@@ -1354,6 +1485,22 @@ document.addEventListener('click',function(e){
   else if(a==='coach-next'){if(coachI>=COACH.length-1)coachEnd();else{coachI++;coachShow();}}
   else if(a==='coach-prev'){if(coachI>0){coachI--;coachShow();}}
   else if(a==='coach-skip'){coachEnd();}
+  else if(a==='hogar'){ui.sheet={kind:'hogar',noFocus:true};ui.inviteCode='';render();hRefresh();}
+  else if(a==='space'){ui.space=(el.dataset.v==='hogar'&&H.hh)?'hogar':'personal';ui.wal=null;render();if(ui.space==='hogar')hRefresh();}
+  else if(a==='hedit'){ui.sheet={kind:'hmove',id:id};render();}
+  else if(a==='hw-new'){ui.sheet={kind:'hwallet'};render();}
+  else if(a==='hw-edit'){ui.sheet={kind:'hwallet',id:id};render();}
+  else if(a==='h-create'){var hn0=((document.getElementById('h-name')||{}).value||'').trim();if(!hn0){toast(t('Nombre del hogar'));return;}
+    sbc().rpc('create_household',{p_name:hn0}).then(function(r){if(r.error){toast(t('No se pudo guardar. Intenta de nuevo.'));return;}toast(t('Hogar creado'));H.busy=false;hRefresh();});}
+  else if(a==='h-join'){var cd0=((document.getElementById('h-code')||{}).value||'').trim();if(!cd0)return;
+    sbc().rpc('join_household',{p_code:cd0}).then(function(r){if(r.error){toast(t('Código no válido o vencido.'));return;}toast(t('Te uniste al hogar'));H.busy=false;hRefresh();});}
+  else if(a==='h-invite'){sbc().rpc('create_invite',{p_hid:H.hh.id}).then(function(r){if(r.error){toast(/hogar_lleno/.test(r.error.message||'')?t('El hogar ya tiene 5 personas.'):t('No se pudo guardar. Intenta de nuevo.'));return;}ui.inviteCode=r.data;render();});}
+  else if(a==='h-copy'){try{navigator.clipboard.writeText(fmtCode(ui.inviteCode));}catch(e){}toast(t('Código copiado'));}
+  else if(a==='h-kick'){if(!confirm(t('¿Quitar a esta persona del hogar?')))return;sbc().rpc('remove_member',{p_uid:id}).then(function(r){if(r.error)toast(t('No se pudo guardar. Intenta de nuevo.'));H.busy=false;hRefresh();});}
+  else if(a==='h-leave'){if(!confirm(t('¿Salir de este hogar?')))return;sbc().rpc('leave_household').then(function(r){if(r.error)toast(t('No se pudo guardar. Intenta de nuevo.'));H.busy=false;hRefresh();});}
+  else if(a==='h-delete'){if(!confirm(t('¿Borrar el hogar y todos sus movimientos? Esto no se puede deshacer.')))return;sbc().rpc('delete_household').then(function(r){if(r.error)toast(t('No se pudo guardar. Intenta de nuevo.'));H.busy=false;hRefresh();});}
+  else if(a==='h-mdel'){if(!confirm(t('¿Borrar este movimiento?')))return;var mid=ui.sheet.id;H.moves=H.moves.filter(function(m){return m.id!==mid;});sbc().from('household_moves').delete().eq('id',mid).then(hChk);ui.sheet=null;render();}
+  else if(a==='h-wdel'){if(!confirm(t('¿Borrar esta billetera y sus movimientos?')))return;var wid2=ui.sheet.id;H.wallets=H.wallets.filter(function(w){return w.id!==wid2;});H.moves=H.moves.filter(function(m){return m.wallet_id!==wid2;});sbc().from('household_wallets').delete().eq('id',wid2).then(hChk);ui.sheet=null;render();}
   else if(a==='x-del'){if(!confirm(t('¿Borrar esta operación? También se quita su comisión, si tenía.')))return;S.xfers=(S.xfers||[]).filter(function(x){return x.id!==id;});S.moves=S.moves.filter(function(m){return m.xid!==id;});save();render();toast(t('Operación borrada'));}
   else if(a==='wal'){ui.wal=el.dataset.v||null;render();}
   else if(a==='cash-new'){ui.sheet={kind:'cash',noFocus:true};render();}
@@ -1452,6 +1599,20 @@ document.addEventListener('submit',function(e){
       if(dr.total<=0){toast(t('El monto total debe ser mayor que cero'));return;}
     }
     if(s.id)S.debts=S.debts.map(function(x){return x.id===s.id?dr:x;});else S.debts.push(dr);msg=t('Deuda guardada');
+  }else if(k==='hmove'){
+    var hw=hWalletOf(d.wallet),ha=num(d.amount);
+    if(!hw||ha<=0){toast(t('Escribe un monto mayor que cero'));return;}
+    var hrow={id:s.id||hid(),household_id:H.hh.id,wallet_id:hw.id,type:d.htype==='Ingreso'?'Ingreso':'Gasto',cat:CATS.slice(0,BASE_N).indexOf(d.cat)>=0?d.cat:'Otro',descr:(d.desc||'').trim().slice(0,80),amount:Math.round(ha*100)/100,cc:hw.cc,date:d.date};
+    var sbm=sbc();
+    if(s.id){H.moves=H.moves.map(function(m){return m.id===s.id?Object.assign({},m,hrow):m;});sbm.from('household_moves').update({wallet_id:hrow.wallet_id,type:hrow.type,cat:hrow.cat,descr:hrow.descr,amount:hrow.amount,cc:hrow.cc,date:hrow.date,updated_at:new Date().toISOString()}).eq('id',s.id).then(hChk);}
+    else{hrow.user_id=H.me;H.moves.unshift(hrow);sbm.from('household_moves').insert({id:hrow.id,household_id:hrow.household_id,wallet_id:hrow.wallet_id,type:hrow.type,cat:hrow.cat,descr:hrow.descr,amount:hrow.amount,cc:hrow.cc,date:hrow.date}).then(hChk);}
+    ui.sheet=null;ui.month=String(hrow.date).slice(0,7);render();toast(t('Movimiento guardado')+' · '+hw.name);return;
+  }else if(k==='hwallet'){
+    var hn=(d.name||'').trim().slice(0,30);if(!hn)return;
+    var sbw=sbc(),hini=num(d.initial);
+    if(s.id){H.wallets=H.wallets.map(function(w){return w.id===s.id?Object.assign({},w,{name:hn,initial:hini}):w;});sbw.from('household_wallets').update({name:hn,initial:hini}).eq('id',s.id).then(hChk);}
+    else{var wn2={id:hid(),name:hn,cc:validCur(d.cc)?d.cc:S.cc,initial:hini,main:false,cash:false};H.wallets.push(wn2);sbw.from('household_wallets').insert({id:wn2.id,household_id:H.hh.id,name:wn2.name,cc:wn2.cc,initial:wn2.initial}).then(hChk);}
+    ui.sheet=null;render();toast(t('Billetera guardada'));return;
   }else if(k==='wallet'){
     var wn=(d.name||'').trim().slice(0,30);if(!wn)return;
     S.wallets=S.wallets||[];
@@ -1497,7 +1658,7 @@ function chime(){try{var A=window.AudioContext||window.webkitAudioContext,c=new 
 if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',function(e){if(e.data&&e.data.type==='pc-push')chime();});
 document.addEventListener('input',function(e){if(e.target.id==='mq'){ui.q=e.target.value;var ml=document.getElementById('mlist');if(ml)ml.innerHTML=movList();}});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ui.sheet)closeSheet();});
-window.__pc={maybeTour:maybeTour,setLang:setLang,langs:LANGS,t:t,view:function(){return ui.view;},get:function(){return S;},empty:function(){return emptyData();},apply:function(d){
+window.__pc={hInit:function(){hRefresh();},hReset:function(){hReset();},maybeTour:maybeTour,setLang:setLang,langs:LANGS,t:t,view:function(){return ui.view;},get:function(){return S;},empty:function(){return emptyData();},apply:function(d){
   if(!d||!d.moves)return;
   S=d;LANG=validLang(S.lang)?S.lang:LANG;S.lang=LANG;
   if(!validCur(S.cc))S.cc=detectCC(LANG);
@@ -1510,7 +1671,6 @@ render();
 })();
 </script>
 <script src="cloud.js"></script>
-<script src="hogar.js"></script>
 <script>
 /* Actualización automática: registra el service worker y recarga cuando hay versión nueva */
 (function(){
